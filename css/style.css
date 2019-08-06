@@ -220,6 +220,16 @@ a:hover {
   transition: all 500ms ease;
 }
 
+.skill-icon {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.skill-icon:hover {
+  max-height: 63px;
+  max-width: 63px;
+}
+
 /*------/ Ul resect /------*/
 
 .ul-resect,
