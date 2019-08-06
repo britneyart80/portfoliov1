@@ -222,12 +222,10 @@ a:hover {
 
 .skill-icon {
   max-height: 60px;
-  max-width: 80px;
 }
 
 .skill-icon:hover {
   max-height: 62px;
-  max-width: 82px;
 }
 
 /*------/ Ul resect /------*/
