@@ -1,13 +1,5 @@
-'use strict'
-
-// use require with a reference to bundle the file and use it in this file
-// const example = require('./example')
-
-// use require without a reference to ensure a file is bundled
-// require('./example')
-const animationEvents = require('./animations/events.js')
-
-$(() => {
+const addHandlers = () => {
+  // scrolling for nav links
   $('a.toscroll').on('click', function (e) {
     const url = e.target.href
     const hash = url.substring(url.indexOf('#') + 1)
@@ -36,4 +28,7 @@ $(() => {
       }, '300')
     })
   })
-})
+  // typewriter animation
+}
+
+module.exports = addHandlers
