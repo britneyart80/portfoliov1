@@ -1,0 +1,208 @@
+$background: rgba(241, 231, 254, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+// back to top arrow
+#back-to-top {
+  position: fixed;
+  right: 2.5vw;
+  bottom: 1rem;
+  border: solid $background;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.content-wrap {
+  background-color: black;
+}
+
+// all main content
+.content {
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 0 8vw;
+  background-color: $background;
+
+}
+
+.credits {
+  padding: 1rem 0;
+  font-size: .7rem;
+  text-align: right;
+  margin-right: 8vw;
+  color: $background;
+  a {
+    color: $background;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+section {
+  border-top: 1.3px solid grey;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+#about {
+  display: inline-block;
+
+  p {
+    padding: 1rem;
+  }
+}
+
+#skills {
+  text-align: center;
+}
+
+#projects {
+
+}
+
+#contact {
+  h1 {
+    text-align: left;
+    margin-left: 8vw;
+    color: $background;
+  }
+  margin-top: 2rem;
+  border: none;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 300px;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  float: left;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: black;
+  a {
+    font-size: 1.3rem;
+    color: lavender;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-shadow: 0 0 3px white;
+    }
+  }
+}
+
+header {
+  background-image: url("assets/img/header-bg.jpg");
+  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  height: 92vh;
+}
+
+// contact information
+
+.info {
+  display: flex;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  margin: 0 2vw 0 8vw;
+
+  // column one
+  .contact-info {
+    width: 40vw;
+  }
+
+  .arrow {
+    width: 5rem;
+  }
+
+  #talkbubble {
+    color: black;
+    height: 300px;
+    background: $background;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    img {
+      width: 2rem;
+      border: none;
+    }
+  }
+  #talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid $background;
+    border-bottom: 13px solid transparent;
+  }
+
+  .art-portfolio {
+    padding: 2rem;
+    h2 {
+      text-align: left;
+      color: $background;
+    }
+    img {
+      margin: 0;
+    }
+    a {
+      p:hover {
+        color: white;
+        text-shadow: 0 0 3px white;
+      }
+      text-decoration: none;
+      color: $background;
+    }
+  }
+
+  // column two
+  .other-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem;
+    height: 500px;
+    width: 40vw;
+    a {
+      text-decoration: none;
+    }
+  }
+}
