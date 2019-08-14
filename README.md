@@ -1,126 +1,119 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# browser-template
+# Portfolio Template
 
-A template for starting front-end projects. Webpack for `require` system, build
-pipeline, and development server. Boostrap and Handlebars.js included. No
-front-end frameworks included.
+Use this template and guide to build your portfolio.
+
+## Objectives
+
+By the end of this, developers should be able to:
+
+- Have something to show to potential future employers/recruiters/friends
+- Work on a portfolio and implement more and more features throughout SEI
 
 ## Installation
 
 1. [Download](../../archive/master.zip) this template.
-    - **Do Not Fork And Clone**
-    - Click the "Clone or Download" button and select "Download Zip".
-1. Move to the `wdi/projects` directory, then unzip the template directory with
-    `unzip /Users/<user-name>/Downloads/browser-template-master.zip`.
-1. Rename the template directory from `browser-template-master` to
-    `<project-name>-client`.
+1. Unzip and rename the template directory.
 1. Empty [`README.md`](README.md) and fill with your own content.
-1. Replace all instances of `ga-wdi-boston.browser-template` with the name of
-    your project.
-    - You can search for all instances of text in Atom by pressing
-    `commant + shift + f` on Mac or `ctrl + shift + f` on WSL.
 1. Move into the new project and `git init`.
-1. Add all of the files in your project with the command `git add --all`.
-      - **Note: This is the only time you should run this command!**
-1. Commit all of your files with the command `git commit`.
-      - Your commit title should read `Initial commit`.
-1. Install dependencies with `npm install`.
-1. Create a new repository on [github.com](https://github.com),
-    _not GitHub Enterprise_.
-1. Name the new repository with the same name used on Step 3.
-1. Follow the instructions on your new repository's setup page. For details on
-   how to push to Github, refer to the section on Github entitled "…or push an existing
-   repository from the command line." Further documentation can be found [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
+1. Create a [Github User Site](https://pages.github.com/) repository as the remote for your portfolio.
+1. Push to your user site `master` branch to deploy or update your site.
 
-## Structure
+## Purpose
 
-### Scripts
+What do you want people to find when they google you?
+What do you want someone's first impression of you to be?
+Your portfolio is the portal to your professional online presence.
+It consolidates the content you've created on multiple platforms and presents
+it in digest form, making it easier for future employers to learn more about you.
 
-Developers should store JavaScript files in [`assets/scripts`](assets/scripts).
-The "manifest" or entry-point is
-[`assets/scripts/app.js`](assets/scripts/app.js). In general, only
-application initialization goes in this file. It's normal for developers to
-start putting all code in this file, but encourage them to break out different
-responsibilities and use the `require` syntax put references where they're
-needed.
+## User Stories to Get Started
 
-### Config
+- As a non-technical HR manager, I want to quickly evaluate whether this candidate has the skills and experience to fill an open position at my company.
+- As a mid-level engineer, I want to evaluate a junior developer’s coding skills by reviewing their projects and reading their code.
+- As a friend of the person who built this portfolio, I want to understand what they do as a developer and what they have created.
 
-Developers should set `apiUrls.production` and `apiUrls.development` in
-[`assets/scripts/config.js`](assets/scripts/config.js).  With
-`apiUrls` set, developers may rely on `apiUrl` as the base for API
-URLs.
+## Required Sections
 
-### Styles
+- About Me: Short blurb explaining who you are, and some background info
+- Skills: All the skills you have that may be helpful on the job
+- Contact info: LinkedIn, Github, city, email or contact form
+- Resume: View and download
+- Project Showcase: Feature your GA projects (more details below)
 
-Developers should store styles in [`assets/styles`](assets/styles) and load them
-from [`assets/styles/index.scss`](assets/styles/index.scss). Bootstrap version 3 is
-included in this template.
+### Optional Sections
 
-### Forms and Using `getFormFields`
+- Personal hobbies/interests
+- Professional Timeline (a visual representation of your work history)
+- Additional work samples (visual design, writing samples, a link to your photography blog)
+- Relevant social profiles (Twitter, Instagram, if they highlight you professionally, not just what your meals look like)
+- Blog posts (links to relevant articles you've published on platforms like Medium or LinkedIn)
 
-Developers should use [getFormFields](get-form-fields.md) to retrieve form data
-to send to an API.
+## Highlighting Your Projects
 
-### Deployment
+Your projects should be featured prominently on your portfolio.  You'll want future employers to see what you accomplished both while you were at GA and after completing this program.
 
-To deploy a browser-template based SPA, run `grunt deploy`.
+- **List projects in reverse chronological order.**  Your capstone is likely the project that best showcases your skills.  Make sure it's featured prominently as the first project in your portfolio.
+- For your team project, be sure to fork, clone, and individually redeploy your project to maintain individual ownership over the site showcased on your portfolio.
+- Include links to your live site as well as front-end and back-end repos.
+- Summarize the functionality of the app as well as what technologies you used to build it.
+- Briefly describe your process for building each app. If you have a blog post that goes into detail for each project, link to that post.
+- Make sure your projects are user-friendly to an unacquainted visitor.
+  - The home page should explain the site’s functionality
+  - **Random users might not want to sign up/sign in.** Consider adding dummy credentials on the homepage that they can use (and explain that), or make sure they can interact with the site without signing up.
+- After you've completed the program, **revisit your projects and refactor them**.  Add new features.  Improve the user experience.  Fix any open issues.  Enhance the app's design aesthetic.
+- **Clean up test data** and create some seed data that you can use to easily refresh your database.  If you want to get fancy, you can write a [scheduled task](https://devcenter.heroku.com/articles/scheduler) that drops, recreates, and reseeds your database periodically.
 
-## Adding Images
+### Design Hints for the Non-designer
 
-To add images to your project, you must store them in the `public` directory.
-To use the image in HTML or CSS, write the path to the image like this:
+The visual appeal of your portfolio is important.  Here are some recommendations to help you produce a portfolio that you're proud of:
 
-```html
-<img src="public/cat.jpg">
-```
-or
-```css
-#my-cool-div {
-  background-image: url('public/cat.jpg')
-}
-```
+- **Choose a template as the basis for your portfolio and customize it.**  There are many professionally designed templates available for free that you can use as the basis for your portfolio.  Of course premium templates are also available, but you don't need to spend money to have a great looking portfolio. If you're determined to build from scratch, use a template as design inspiration.  Treat it as a mockup and faithfully reproduce the layout, paying special attention to the spacing, sizes of elements, and font family choices of the template's designer.
 
-Note that there's no `./` or `/` in front of `public/filename.jpg`.
+- **Start with a framework.** [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), and [Foundation](http://foundation.zurb.com) are the most popular options but there are many others.  Even if you have a very specific design in mind, use a framework to incorporate all of the base styles, then customize from there.  This will improve consistency across browsers and devices, and it will save you time. An added benefit is that many employers are specifically looking for people with familiarity with one or more popular frameworks.
 
-## Adding Fonts
+- Even if you don't have any design knowledge, you can use some designer tricks to make your portfolio look great.  There are a few things that can radically improve any design:
 
-To add custom fonts to your app, you can either use a CDN like Google Fonts, or
-you can download the fonts and save them in the `public` directory. If you use
-the former method, follow the directions on the website providing the fonts.
+  - **Add padding**.  White space, sometimes referred to as negative space, is a professional designer's secret weapon and a shortage of it is the hallmark of an amateur.  Let your content breathe!  You almost can't use too much of it, so if you think you've got enough, go back and add some more.  Checkout the result and ask others what they think.
+  - **Keep font families simple and to a minimum**. Stick with either one or two font families for your entire portfolio. If you're using one, choose different weights for headings versus your content. If you choose two fonts, use two that have high contrast.  For example, use a serif for the body content and a sans-serif font for your headings.  :warning: Stay away from cursive, script, or highly decorative fonts altogether.
+  - **Simplify your color palette**.  Pro designers spend years learning about color theory.  You don't have the time for that. :smiley: Choose one color and use it sparingly throughout as an accent.  Perhaps use it in your buttons and your top-level headings.  Restraint is the name of the game here.
+  - **Line things up.**  Alignment is key to making a clean, professional portfolio.  Use the grid in your framework of choice.  Just use it!
 
-For local fonts, put the files in `public`, and then import and use them in a
-`.scss` file like this:
+## Deploying Your Portfolio
 
-```scss
-@font-face {
-  font-family: 'Nature Beauty';
-  src: url('public/Nature-Beauty.ttf') format('truetype');
-}
+To deploy your portfolio, you'll only need to push to your **User Site** repository master branch.
 
-.element-with-custom-font {
-  font-family: 'Nature Beauty';
-}
-```
+### Github “User Site” vs. “Project Sites”
 
-## Tasks
+Github provides only ***one*** “User Site” per account/organization with the url `username.github.io`. Your user site should be used for your portfolio since it will showcase the rest of your projects on Github. The user site is unique in that it is served from the `master` branch of your repository. Read more about [User Sites here](https://help.github.com/articles/user-organization-and-project-pages/#project-pages).
 
-Developers should run these often!
+Other web apps/sites you host on Github are known as “Project Sites”. These will have URLs in the form of `username.github.io/project_names` and are served from the `gh-pages` branch of your repository. You can have an unlimited number of project sites.  At the conclusion of this program, you'll have at least four —  one for each of your projects — but we hope you develop many more!  Read more about [Project Sites here](https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages).
 
-- `grunt nag` or just `grunt`: runs code quality analysis tools on your code
-    and complains
-- `grunt make-standard`: reformats all your code in the JavaScript Standard Style
-- `grunt <server|serve|s>`: generates bundles, watches, and livereloads
-- `grunt build`: place bundled styles and scripts where `index.html` can find
-    them
-- `grunt deploy`: builds and deploys master branch
+> #### A Quick Note on Technology :triangular_flag_on_post:
+> As you know by now, in SEI we use [browser-template](https://git.generalassemb.ly/ga-wdi-boston/browser-template) to create
+web apps.  Don't use this for your portfolio.  Browser template will only deploy to the gh-pages branch and ideally, your portfolio should be hosted on your user page.  If you want to use an npm package, speak with a consultant to get assistance adapting this template instead of opting for browser-template.
 
+## What if I Have Questions...
+
+Ask yourself if it's a technical or non-technical question: If your question is "Is it helpful to show that I'm
+also a donut fanatic on my portfolio page?" you should direct that towards
+Outcomes. If your question is "Is it appropriate to put a photo of me passed out
+ at a bar?" the answer is "No." If your question is "How come I have an error `Cannot read property of
+ undefined`?" you probably want to check what is to the left of the `.` and then
+ open an issue [here](https://git.generalassemb.ly/ga-wdi-boston/portfolio-template/issues).
 
 ## Additional Resources
 
-- [Modern Javascript Explained for Dinosaurs](https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70)
-- [Making Sense of Front End Build Tools](https://medium.freecodecamp.org/making-sense-of-front-end-build-tools-3a1b3a87043b)
+- [Start Bootstrap Free Templates](https://startbootstrap.com/themes/portfolio-resume/)
+- [Showcase Your Skills With These 15 Free Portfolio Templates](https://skillcrush.com/2016/09/06/free-portfolio-templates/)
+- [FontAwesome](https://fontawesome.com/)
+- [Devicon](https://konpa.github.io/devicon/)
+- [Unsplash | Beautiful, free photos](https://unsplash.com/)
+- [Beginner's Guide to the Programming Portfolio](https://leerob.io/blog/beginners-guide-to-the-programming-portfolio)
+- [SEO: How I achieved #1 on google search results for full-stack developer portfolio](https://caferati.me/labs/seo-part-one-google-search-for-full-stack-developer-portfolio)
+- [The Portfolio Hack That Will Make Everyone Want To Hire You](https://www.freecodecamp.org/news/the-portfolio-hack-that-will-make-everyone-want-to-hire-you-58079cfed0b/)
+- [10 Easy Design Tips for Non Designers](https://medium.com/makeamark/10-easy-design-tips-for-non-designers-b83405e49179)
 
 ## [License](LICENSE)
 
