@@ -1,4 +1,5 @@
 @import 'animation.scss';
+$background: rgba(241, 231, 254, 1);
 
 * {
   margin: 0;
@@ -6,15 +7,14 @@
 }
 
 body {
-  background: black;
 }
 
 // back to top arrow
 #back-to-top {
   position: fixed;
-  right: 4vw;
+  right: 2.5vw;
   bottom: 1rem;
-  border: solid rgba(241, 231, 254, 1);
+  border: solid $background;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 10px;
@@ -22,12 +22,29 @@ body {
   -webkit-transform: rotate(-135deg);
 }
 
+.content-wrap {
+  background-color: black;
+}
+
 // all main content
 .content {
   padding: 2rem;
-  border-radius: 15px;
-  background-color: rgba(241, 231, 254, 1);
-  margin: 0 12vw;
+  border-radius: 8px;
+  margin: 0 8vw;
+  background-color: $background;
+
+}
+
+.credits {
+  padding: 1rem 0;
+  font-size: .7rem;
+  text-align: right;
+  margin-right: 8vw;
+  color: $background;
+  a {
+    color: $background;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -39,7 +56,7 @@ h2 {
 }
 
 section {
-  border-top: 1px solid grey;
+  border-top: 1.3px solid grey;
   padding: 1rem;
   flex-wrap: nowrap;
   h2 {
@@ -54,6 +71,25 @@ section {
   p {
     padding: 1rem;
   }
+}
+
+#skills {
+  text-align: center;
+}
+
+#projects {
+
+}
+
+#contact {
+  h1 {
+    text-align: left;
+    margin-left: 8vw;
+    color: $background;
+  }
+  margin-top: 2rem;
+  border: none;
+  background-color: black;
 }
 
 img {
@@ -72,6 +108,7 @@ nav {
   height: 8vh;
   background-color: black;
   a {
+    font-size: 1.3rem;
     color: lavender;
     text-decoration: none;
     &:hover {
@@ -82,11 +119,11 @@ nav {
 }
 
 header {
-  align-items: center;
   background-image: url("assets/img/header-bg.jpg");
+  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
   color: black;
   display: flex;
   flex-direction: column;
@@ -94,4 +131,68 @@ header {
   text-align: center;
   margin: 0;
   height: 92vh;
+}
+
+// contact information
+
+.info {
+  display: flex;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  margin: 0 2vw 0 8vw;
+
+  .arrow {
+    width: 5rem;
+  }
+
+  #talkbubble {
+    color: black;
+    height: 300px;
+    background: $background;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    img {
+      width: 2rem;
+      border: none;
+    }
+  }
+  #talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid $background;
+    border-bottom: 13px solid transparent;
+  }
+
+  .art-portfolio {
+    padding: 2rem;
+    h2 {
+      color: $background;
+    }
+    img {
+      margin: 0;
+    }
+    a {
+      p:hover {
+        color: white;
+        text-shadow: 0 0 3px white;
+      }
+      text-decoration: none;
+      color: $background;
+    }
+  }
+
+  .other-links {
+    padding: .5rem;
+    height: 500px;
+    a {
+      text-decoration: none;
+    }
+  }
 }

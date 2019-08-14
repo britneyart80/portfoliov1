@@ -5,9 +5,9 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-const animationEvents = require('./animations/events.js')
 
 $(() => {
+  // smooth transition on nav link click
   $('a.toscroll').on('click', function (e) {
     const url = e.target.href
     const hash = url.substring(url.indexOf('#') + 1)
@@ -18,22 +18,20 @@ $(() => {
   })
 
   // back to top button
-  jQuery(document).ready(function () {
-    const btn = $('#back-to-top')
+  const btn = $('#back-to-top')
 
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('show')
-      } else {
-        btn.removeClass('show')
-      }
-    })
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show')
+    } else {
+      btn.removeClass('show')
+    }
+  })
 
-    btn.on('click', function (e) {
-      e.preventDefault()
-      $('html, body').animate({
-        scrollTop: 0
-      }, '300')
-    })
+  btn.on('click', function (e) {
+    e.preventDefault()
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300')
   })
 })
