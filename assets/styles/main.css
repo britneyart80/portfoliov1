@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+h1 {
+  font-family: 'Yeseva One', cursive;
+}
+h2, h3 {
+  font-family: 'Abel', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +20,7 @@ body {
 }
 
 a {
+  font-family: 'Abel', sans-serif;
   text-decoration: none;
   color: black;
 }
@@ -22,6 +36,12 @@ a {
   padding: 10px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+#btt-text {
+  color: white;
+  position: fixed;
+  right: 1.9vw;
+  bottom: .7rem;
 }
 
 .content-wrap {
