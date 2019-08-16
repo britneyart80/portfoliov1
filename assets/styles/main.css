@@ -6,6 +6,11 @@
 body {
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* // back to top arrow */
 #back-to-top {
   position: fixed;
@@ -42,7 +47,6 @@ body {
 
 .credits a {
   color: rgba(241, 231, 254, 1);
-  text-decoration: none;
 }
 
 h1 {
@@ -122,7 +126,7 @@ nav a:hover,
 
 header {
   background-image: url("../img/header-bg.jpg");
-  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+  box-shadow: 0 0 40px rgba(0,0,0,1) inset;
   align-items: center;
   background-size: cover;
   background-position: center;
@@ -169,6 +173,7 @@ header {
 #talkbubble img {
   width: 2rem;
   border: none;
+  padd
 }
 #talkbubble:before {
   content: "";
@@ -179,6 +184,17 @@ header {
   border-top: 13px solid transparent;
   border-right: 26px solid rgba(241, 231, 254, 1);
   border-bottom: 13px solid transparent;
+}
+.talkbubble-info {
+  padding: 1rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.talkbubble-info a:hover {
+  text-decoration: underline;
 }
 
 .art-portfolio {
@@ -206,7 +222,14 @@ header {
   height: 500px;
   width: 40vw;
 }
-.other-links a {
+.other-links a, .github {
   color: rgba(241, 231, 254, 1);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.other-links img {
+  max-height: 80px;
 }
