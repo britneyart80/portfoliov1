@@ -16,6 +16,10 @@ p {
   padding: 0;
 }
 
+.container {
+  padding: 0;
+}
+
 body {
 }
 
@@ -100,7 +104,9 @@ section h2 {
 }
 
 #projects {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact {
@@ -117,7 +123,7 @@ section h2 {
 
 img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   margin: 1rem;
   border-radius: 5px;
   border: 1px solid black;
@@ -178,6 +184,15 @@ header {
 
 .arrow {
   width: 5rem;
+}
+
+.projects {
+  display: inline-block;
+}
+
+.dollary, .tictactoe {
+  display: flex;
+  flex-direction: column;
 }
 
 #talkbubble {
