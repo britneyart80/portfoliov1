@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
 h1 {
   font-family: 'Yeseva One', cursive;
+  font-size: 4rem;
 }
-h2, h3 {
+h2 {
   font-family: 'Abel', sans-serif;
+  font-size: 2rem;
+}
+h3 {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5rem;
 }
 
 p {
@@ -29,11 +35,17 @@ a {
   color: black;
 }
 
+.btn-primary {
+  background-color: rgb(128,0,128);
+  border: none;
+  max-width: 200px;
+}
+
 /* // back to top arrow */
 #back-to-top {
   position: fixed;
   right: 2.5vw;
-  bottom: 1rem;
+  bottom: 1.3rem;
   border: solid rgba(241, 231, 254, 1);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -44,8 +56,8 @@ a {
 #btt-text {
   color: white;
   position: fixed;
-  right: 1.9vw;
-  bottom: .7rem;
+  right: 1.7vw;
+  bottom: 1px;
 }
 
 .content-wrap {
@@ -71,14 +83,6 @@ a {
 
 .credits a {
   color: rgba(241, 231, 254, 1);
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 1.5rem;
 }
 
 section {
@@ -171,7 +175,7 @@ header {
   display: flex;
   margin-top: 1rem;
   padding: 1.4rem;
-  margin: 0 2vw 0 8vw;
+  margin-left: 2vw;
 }
 
 .info img {
@@ -193,6 +197,8 @@ header {
 .dollary, .tictactoe {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #talkbubble {

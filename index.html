@@ -18,13 +18,15 @@
 <body>
   <div class="container wrapper col-12">
     <!-- nav bar -->
-    <div class="nav-bar">
-      <nav>
-        <a href="#about" class="toscroll">About</a>
-        <a href="#skills" class="toscroll">Skills</a>
-        <a href="#projects" class="toscroll">Projects</a>
-        <a href="#contact" class="toscroll">Contact</a>
-      </nav>
+    <div class="row nav-bar">
+      <div class="col-12">
+        <nav>
+          <a href="#about" class="toscroll">About</a>
+          <a href="#skills" class="toscroll">Skills</a>
+          <a href="#projects" class="toscroll">Projects</a>
+          <a href="#contact" class="toscroll">Contact</a>
+        </nav>
+      </div>
     </div>
 
     <!-- header section -->
@@ -35,7 +37,7 @@
 
     <!-- wrapper for content -->
     <div class="content-wrap">
-      <!-- All page content-->
+      <!-- content for main page info-->
       <div class="content">
         <div id="back-to-top">
           <i class="arrow up"></i>
@@ -56,7 +58,7 @@
         </section>
 
         <!-- section for skills -->
-        <section class="row" id="skills">
+        <section class="row flex-column" id="skills">
           <h2> Skills </h2>
           <div class="languages">
             <h3> Languages </h3>
@@ -67,23 +69,52 @@
         </section>
 
         <!-- section for projects -->
-        <section class="row" id="projects">
+        <section class="row justify-content-center align-items-center" id="projects">
           <div class="projects">
             <h2> Projects </h2>
 
             <div class="dollary">
               <img src="assets/img/dollary.png">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Launch demo modal
+              <!-- trigger dollary modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dollaryModalCenter">
+                Learn about Dollary
               </button>
 
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="dollaryModalCenter" tabindex="-1" role="dialog" aria-labelledby="dollaryModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <h5 class="modal-title" id="dollaryModalLongTitle">Dollary</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary"><a href="https://britneyart80.github.io/Dollary/" target="_blank">Go to Dollary</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tictactoe">
+              <img src="assets/img/tic-tac-toe.png">
+              <!-- trigger dollary modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tttModalCenter">
+                Learn about Tic-Tac-Toe
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="tttModalCenter" tabindex="-1" role="dialog" aria-labelledby="tttModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="tttModalLongTitle">Tic-Tac-Toe</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -99,24 +130,18 @@
                 </div>
               </div>
             </div>
-
-            <div class="tictactoe">
-              <img src="assets/img/tic-tac-toe.png">
-            </div>
           </div>
         </section>
-
-
       </div>
 
       <!-- section for contact -->
       <section id="contact">
         <h1> Contact Me! </h1>
-        <div class="container">
-          <div class="info row">
+        <div class="container mx-auto">
+          <div class="info row justify-content-center align-items-center">
 
             <!-- column one -->
-            <div class="contact-info">
+            <div class="contact-info col-6">
               <div id="talkbubble">
                 <div class="talkbubble-info">
                   <img src="assets/img/email.png">
@@ -138,7 +163,7 @@
             </div>
 
             <!-- column two -->
-            <div class="other-links">
+            <div class="other-links col-6">
               <div class="github">
                 <img src="assets/img/github-logo.png">
                 <a href="https://github.com/britneyart80" target="_blank">
