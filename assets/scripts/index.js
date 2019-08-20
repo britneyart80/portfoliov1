@@ -26,4 +26,12 @@ $(() => {
       scrollTop: 0
     }, '300')
   })
+
+  $('i').mouseover(function () {
+    const name = $(this).attr('name')
+    $('p', this).html(name)
+  })
+  $('i').mouseout(function () {
+    $('p', this).html('')
+  })
 })

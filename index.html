@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="assets/styles/main.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -60,11 +61,27 @@
         <!-- section for skills -->
         <section class="row flex-column" id="skills">
           <h2> Skills </h2>
-          <div class="languages">
+          <div class="skills-subheader">
             <h3> Languages </h3>
+            <div class="languages d-flex justify-content-center align-items-center flex-wrap">
+              <i class="devicon-javascript-plain colored" name="JavaScript"><p></p></i>
+              <i class="devicon-java-plain" name="Java"><p></p></i>
+              <i class="devicon-ruby-plain colored" name="Ruby"><p></p></i>
+              <i class="devicon-html5-plain" name="HTML"><p></p></i>
+              <i class="devicon-css3-plain colored" name="CSS"><p></p></i>
+            </div>
           </div>
-          <div class="frameworks">
-            <h3> Frameworks and Technologies </h3>
+          <div class="skills-subheader">
+            <h3> Libraries and Frameworks </h3>
+            <div class="frameworks d-flex justify-content-center align-items-center flex-wrap">
+              <i class="devicon-bootstrap-plain colored" name="Bootstrap"><p></p></i>
+              <i class="devicon-jquery-plain colored" name="jQuery"><p></p></i>
+              <i class="devicon-sass-original colored" name="Sass"><p></p></i>
+              <i class="devicon-rails-plain colored" name="Rails"><p></p></i>
+              <i class="devicon-react-original colored" name="React"><p></p></i>
+              <i class="devicon-express-original colored" name="Express"><p></p></i>
+              <i class="devicon-mongodb-plain colored" name="MongoDB"><p></p></i>
+            </div>
           </div>
         </section>
 
@@ -72,6 +89,34 @@
         <section class="row flex-column justify-content-center align-items-center" id="projects">
           <h2> Projects </h2>
           <div class="projects d-flex flex-row flex-wrap justify-content-center align-items-center">
+
+            <div class="portfolio project">
+              <img src="assets/img/portfolio.png">
+              <!-- trigger portfolio modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModalCenter">
+                Learn about this portfolio!
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="portfolioModalCenter" tabindex="-1" role="dialog" aria-labelledby="portfolioModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="portfolioModalLongTitle">My Portfolio</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary modal-button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="dollary project">
               <img src="assets/img/dollary.png">
@@ -124,7 +169,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary modal-button" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary modal-button">Save changes</button>
+                      <button type="button" class="btn btn-primary modal-button"><a href="https://britneyart80.github.io/Tic-tac-toe-client/" target="_blank">Go to Tic Tac Toe</a></button>
                     </div>
                   </div>
                 </div>
