@@ -26,8 +26,8 @@ p {
   padding: 0;
 }
 
-.col {
-  padding: 0;
+.row {
+  margin-right: 0px;
 }
 
 body {
