@@ -26,6 +26,10 @@ p {
   padding: 0;
 }
 
+.col {
+  padding: 0;
+}
+
 body {
 }
 
@@ -39,6 +43,14 @@ a {
   background-color: rgb(128,0,128);
   border: none;
   max-width: 200px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(155,51,153);
+}
+
+.arrow {
+  width: 5rem;
 }
 
 /* // back to top arrow */
@@ -181,24 +193,31 @@ header {
 .info img {
   border: none;
 }
+
+.modal-button a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* // column one */
 .contact-info {
   width: 40vw;
-}
-
-.arrow {
-  width: 5rem;
 }
 
 .projects {
   display: inline-block;
 }
 
-.dollary, .tictactoe {
+.project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3px;
+}
+
+.project img {
+  min-width: 180px;
 }
 
 #talkbubble {

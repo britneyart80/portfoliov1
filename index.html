@@ -19,7 +19,7 @@
   <div class="container wrapper col-12">
     <!-- nav bar -->
     <div class="row nav-bar">
-      <div class="col-12">
+      <div class="col col-12">
         <nav>
           <a href="#about" class="toscroll">About</a>
           <a href="#skills" class="toscroll">Skills</a>
@@ -69,11 +69,11 @@
         </section>
 
         <!-- section for projects -->
-        <section class="row justify-content-center align-items-center" id="projects">
-          <div class="projects">
-            <h2> Projects </h2>
+        <section class="row flex-column justify-content-center align-items-center" id="projects">
+          <h2> Projects </h2>
+          <div class="projects d-flex flex-row flex-wrap justify-content-center align-items-center">
 
-            <div class="dollary">
+            <div class="dollary project">
               <img src="assets/img/dollary.png">
               <!-- trigger dollary modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dollaryModalCenter">
@@ -94,15 +94,15 @@
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary"><a href="https://britneyart80.github.io/Dollary/" target="_blank">Go to Dollary</a></button>
+                      <button type="button" class="btn btn-secondary modal-button" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary modal-button"><a href="https://britneyart80.github.io/Dollary/" target="_blank">Go to Dollary</a></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="tictactoe">
+            <div class="tictactoe project">
               <img src="assets/img/tic-tac-toe.png">
               <!-- trigger dollary modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tttModalCenter">
@@ -123,8 +123,8 @@
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary modal-button" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary modal-button">Save changes</button>
                     </div>
                   </div>
                 </div>
