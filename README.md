@@ -10,10 +10,10 @@ portfolio and projects, and I hope to be in contact with you.
 
 ## Projects
 
-- <a href="britneyart80.github.io" target="_blank>This portfolio</a>
+- <a href="britneyart80.github.io" target="_blank">This portfolio</a>
 - <a href="britneyart80.github.io/capstone-client" target="_blank">Prepper</a>
-- <a href="britneyart80.github.io/Dollary" target="_blank>Dollary</a>
-- <a href="britneyart80.github.io/Tic-tac-toe-client" target="_blank>Tic Tac Toe</a>
+- <a href="britneyart80.github.io/Dollary" target="_blank">Dollary</a>
+- <a href="britneyart80.github.io/Tic-tac-toe-client" target="_blank">Tic Tac Toe</a>
 
 ### Personal Hobbies/Interests
 
