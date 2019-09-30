@@ -1,15 +1,7 @@
-This portfolio is still in progress.
+<i> This portfolio is still in progress. </i>
 
 # Portfolio
 [View my portfolio!](britneyart80.github.io)
-
-## Required Sections
-
-- About Me: Short blurb explaining who you are, and some background info
-- Skills: All the skills you have that may be helpful on the job
-- Contact info: LinkedIn, Github, city, email or contact form
-- Resume: View and download
-- Project Showcase: Feature your GA projects (more details below)
 
 ## About Me
 
