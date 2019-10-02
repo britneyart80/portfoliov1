@@ -241,6 +241,10 @@ header {
   min-width: 180px;
 }
 
+.technologies {
+  padding-left: 1rem;
+}
+
 #talkbubble {
   color: black;
   height: 300px;
