@@ -1,0 +1,22 @@
+#about {
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15vw;
+  background-color: #FFFFFF;
+}
+
+.about-info {
+  padding-right: 50px;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+#about img {
+  max-width: 100%;
+  max-height: 400px;
+  margin: 1rem;
+  border-radius: 50%;
+  float: right;
+}

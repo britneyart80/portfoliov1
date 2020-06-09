@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans|Satisfy&display=swap');
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 8vh;
+  background-color: #DBBEBB;
+  border: solid #585858 0.5px;
+}
+
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 15px;
+
+}
+
+nav a:hover,
+.art-portfolio a p:hover,
+.other-links a:hover {
+  color: #B87D83;
+  background-color: white;
+  border-radius: 10px;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+header {
+  background-color: #FFFFFF;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  height: 60vh;
+}

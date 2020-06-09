@@ -1,0 +1,141 @@
+
+/* // contact information */
+
+#contact {
+  margin-top: 2rem;
+  border: none;
+  background: rgba(241, 231, 254, .6);
+}
+#contact h1 {
+  text-align: left;
+  margin-left: 8vw;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.credits {
+  padding: 1rem 0;
+  font-size: .7rem;
+  text-align: right;
+  margin-right: 8vw;
+  color: rgba(241, 231, 254, 1);
+}
+
+.credits a {
+  color: rgba(241, 231, 254, 1);
+}
+
+.info {
+  display: flex;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  margin-left: 2vw;
+}
+
+.info img {
+  border: none;
+}
+
+.modal-button a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* // column one */
+.contact-info {
+  width: 40vw;
+}
+
+.projects {
+  display: inline-block;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.project img {
+  min-width: 180px;
+}
+
+.technologies {
+  padding-left: 1rem;
+}
+
+#talkbubble {
+  color: black;
+  height: 300px;
+  background: rgba(241, 231, 254, 1);
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+#talkbubble img {
+  width: 2rem;
+  border: none;
+  padd
+}
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgba(241, 231, 254, 1);
+  border-bottom: 13px solid transparent;
+}
+.talkbubble-info {
+  padding: 1rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.talkbubble-info a:hover {
+  text-decoration: underline;
+}
+
+.art-portfolio {
+  padding: 2rem;
+}
+.art-portfolio h2 {
+  text-align: left;
+  color: rgba(241, 231, 254, 1);
+}
+.art-portfolio img {
+  margin: 0;
+}
+.art-portfolio a {
+    text-decoration: none;
+    color: rgba(241, 231, 254, 1);
+  }
+
+  /* // column two */
+.other-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+  height: 500px;
+  width: 40vw;
+}
+.other-links a, .github {
+  color: rgba(241, 231, 254, 1);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.other-links img {
+  max-height: 80px;
+}
