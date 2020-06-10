@@ -1,5 +1,36 @@
-#projects {
+#projects .section-header {
+  margin-left: 12vw;
+  margin-bottom: 4rem;
+  font-size: 6vw;
+  color: #B87D83;
+}
+
+.projects {
+  display: inline-block;
+}
+
+.project {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  margin: 2rem;
+  margin-bottom: 8rem;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.project img {
+  max-width: 60vw;
+  max-height: none;
+}
+
+/* modal */
+
+.technologies {
+  padding-left: 1rem;
 }

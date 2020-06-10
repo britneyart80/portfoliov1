@@ -14,6 +14,8 @@
   <link href="assets/styles/header.css" rel="stylesheet">
   <link href="assets/styles/projects.css" rel="stylesheet">
   <link href="assets/styles/skills.css" rel="stylesheet">
+  <link href="assets/styles/separators.css" rel="stylesheet">
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -88,12 +90,26 @@
           </div>
         </section>
 
-        <!-- section for projects -->
-        <section class="fade-scroll row flex-column justify-content-center align-items-center" id="projects">
-          <h2 class="section-header"> Projects </h2>
-          <div class="projects d-flex flex-row flex-wrap justify-content-center align-items-center">
 
-            <div class="portfolio project">
+        <div id="values" class="fade-scroll">
+          <h2 class="subheader"> MY VALUES </h2>
+          <ul class="values-list">
+            <li class="value">CURIOSITY</li>
+            <li class="value">HONESTY</li>
+            <li class="value">PERSEVERENCE</li>
+            <li class="value">CREATIVITY</li>
+            <li class="value">EFFICIENCY</li>
+          </ul>
+        </div>
+
+        <!-- section for projects -->
+        <section class="row flex-column" id="projects">
+          <h2 class="fade-scroll section-header"> Projects... </h2>
+
+          <div class="projects">
+
+            <!-- PORTFOLIO -->
+            <div class="fade-scroll portfolio project right">
               <img src="assets/img/portfolio.png">
               <!-- trigger portfolio modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModalCenter">
@@ -129,7 +145,8 @@
               </div>
             </div>
 
-            <div class="prepper project">
+            <!-- PREPPER -->
+            <div class="fade-scroll prepper project left">
               <img src="assets/img/prepper.png">
               <!-- trigger prepper modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#prepperModalCenter">
@@ -173,7 +190,8 @@
               </div>
             </div>
 
-            <div class="dollary project">
+            <!-- DOLLARY -->
+            <div class="fade-scroll dollary project left">
               <img src="assets/img/dollary.png">
               <!-- trigger dollary modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dollaryModalCenter">
@@ -217,9 +235,10 @@
               </div>
             </div>
 
-            <div class="tictactoe project">
+            <!-- TICTACTOE -->
+            <div class="fade-scroll tictactoe project right">
               <img src="assets/img/tic-tac-toe.png">
-              <!-- trigger dollary modal -->
+              <!-- trigger tic tac toe modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tttModalCenter">
                 Learn about Tic-Tac-Toe
               </button>

@@ -4,7 +4,7 @@ $(() => {
     const url = e.target.href
     const hash = url.substring(url.indexOf('#') + 1)
     $('html, body').animate({
-      scrollTop: $('#' + hash).offset().top
+      scrollTop: $('#' + hash).offset().top - 20
     }, 1300)
     return false
   })
@@ -37,20 +37,18 @@ $(() => {
   })
 
   $(window).scroll(function() {
-    // var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    // var windowTop = $(this).scrollTop();
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    var windowTop = $(this).scrollTop();
 
     $(".fade-scroll").each(function() {
-      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-      var windowTop = $(window).scrollTop();
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       var objectTop = $(this).offset().top + $(this).outerHeight() - $(this).height();
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom - 150 < windowTop || objectTop + 100 > windowBottom) { //object comes into view
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      /* If the element is out of bounds of the window then fade it out */
+      if (objectBottom - 150 < windowTop || objectTop + 150 > windowBottom) { // object fades out
+        if ($(this).css("opacity")==1) {$(this).fadeTo(400,0);}
+      } else { //object comes into view
+        if ($(this).css("opacity")==0) {$(this).fadeTo(400,1);}
       }
     });
   }).scroll(); //invoke scroll-handler on page-load

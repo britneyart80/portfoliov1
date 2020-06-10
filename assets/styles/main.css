@@ -17,6 +17,14 @@ dusty pink: #DBBEBB
 light dusty pink: #ddb8ba
 */
 
+section {
+  margin: 2rem 0;
+}
+
+hr {
+  border: 0.5px solid black;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
 }
@@ -38,7 +46,7 @@ p {
 }
 
 .section-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .skills-subheader {
@@ -71,7 +79,7 @@ a {
 
 /* // all main content */
 .content {
-  background-color: rgba(241, 231, 254, 1);
+  background-color: #FFFFFF;
 }
 
 section {
@@ -125,5 +133,5 @@ img {
 }
 
 .content-wrap {
-  background-color: black;
+  background-color: #FFFFFF;
 }

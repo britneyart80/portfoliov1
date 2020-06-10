@@ -4,7 +4,7 @@
 #contact {
   margin-top: 2rem;
   border: none;
-  background: rgba(241, 231, 254, .6);
+  background: #B87D83;
 }
 #contact h1 {
   text-align: left;
@@ -59,7 +59,8 @@
 }
 
 .project img {
-  min-width: 180px;
+  max-width: 60vw;
+  max-height: none;
 }
 
 .technologies {
