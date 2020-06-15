@@ -4,41 +4,51 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 8vh;
-  background-color: #DBBEBB;
-  border: solid #585858 0.5px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid;
+  padding: 10px;
+  box-shadow: 0px 2px 8px #888888;
 }
 
 nav a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #B87D83;;
   text-decoration: none;
   padding: 5px;
   margin: 0 15px;
 
 }
 
-nav a:hover,
-.art-portfolio a p:hover,
-.other-links a:hover {
-  color: #B87D83;
-  background-color: white;
+nav a:hover {
   border-radius: 10px;
-  transition: color 0.5s ease;
+  background-color: white;
+  color: #B87D83;
+  transition: font-weight 0.5s ease;
   text-decoration: none;
+  font-weight: 800;
 }
 
 header {
-  background-color: #FFFFFF;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 0;
-  height: 450px;
+  height: 700px;
+  color: #FFFFFF;
+  background: linear-gradient(132deg, #f0a7c7, #89b4e6);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 5s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }

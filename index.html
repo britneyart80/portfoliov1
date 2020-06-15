@@ -14,7 +14,7 @@
   <link href="assets/styles/header.css" rel="stylesheet">
   <link href="assets/styles/projects.css" rel="stylesheet">
   <link href="assets/styles/skills.css" rel="stylesheet">
-  <link href="assets/styles/separators.css" rel="stylesheet">
+  <link href="assets/styles/values.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -51,6 +51,9 @@
           <i class="arrow up"></i>
         </div>
         <p id="btt-text" style="font-size: .5rem;">Back to Top</p>
+
+        <section class="row elipses"> <h2 class="col-12">...</h2> </section>
+
         <!-- section for about -->
         <section class="fade-scroll row" id="about">
           <div class="about-info col-7">
@@ -80,6 +83,7 @@
           <div>
             <h3 class="skills-subheader"> Libraries and Frameworks </h3>
             <div class="frameworks d-flex justify-content-center align-items-center flex-wrap">
+              <i name="SFCC"><img src="assets/img/salesforce.png" class="salesforce-icon"><p></p></i>
               <i class="devicon-bootstrap-plain colored" name="Bootstrap"><p></p></i>
               <i class="devicon-jquery-plain colored" name="jQuery"><p></p></i>
               <i class="devicon-sass-original colored" name="Sass"><p></p></i>
@@ -91,23 +95,37 @@
         </section>
 
 
-        <div id="values" class="fade-scroll">
-          <h2 class="subheader"> MY VALUES </h2>
-          <ul class="values-list">
-            <li class="value">CURIOSITY</li>
-            <li class="value">HONESTY</li>
-            <li class="value">PERSEVERENCE</li>
-            <li class="value">CREATIVITY</li>
-            <li class="value">EFFICIENCY</li>
-          </ul>
-        </div>
+        <section id="values" class="fade-scroll">
+          <h2 class="section-subheader"> MY VALUES </h2>
+          <div class="values">
+            <div class="value">
+              <img src="assets/img/curiosity.png">
+              <h3 class="value-name">CURIOSITY</h3>
+              <p class="value-description">Always striving to learn and ask questions</p>
+            </div>
+            <div class="value">
+              <img src="assets/img/perseverence.png">
+              <h3 class="value-name">PERSEVERENCE</h3>
+              <p class="value-description">Never afraid to take on challenges and opportunities</p>
+            </div>
+            <div class="value">
+              <img src="assets/img/efficiency.png">
+              <h3 class="value-name">EFFICIENCY</h3>
+              <p class="value-description">Strong preference for concise and easy-to-read code</p>
+            </div>
+            <div class="value">
+              <img src="assets/img/creativity.png">
+              <h3 class="value-name">CREATIVITY</h3>
+              <p class="value-description">I love finding new ways to tackle obstacles</p>
+            </div>
+          </div>
+        </section>
 
         <!-- section for projects -->
         <section class="row flex-column" id="projects">
-          <h2 class="fade-scroll section-header"> Projects... </h2>
+          <h2 class="fade-scroll section-subheader">PROJECTS</h2>
 
           <div class="projects">
-
             <!-- PORTFOLIO -->
             <div class="fade-scroll portfolio project right">
               <img src="assets/img/portfolio.png">

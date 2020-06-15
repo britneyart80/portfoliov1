@@ -1,0 +1,31 @@
+/* values */
+
+#values {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  color: black;
+}
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.values img {
+  border: none;
+  margin: 1rem 0;
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+}

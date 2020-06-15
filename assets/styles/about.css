@@ -1,8 +1,10 @@
 #about {
   justify-content: center;
   align-items: center;
-  padding: 20px 15vw;
+  margin-top: 1rem;
+  padding: 50px 15vw;
   background-color: #FFFFFF;
+  border-bottom: 0.5px solid #B0B0B0;
 }
 
 .about-info {

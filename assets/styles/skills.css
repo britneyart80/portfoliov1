@@ -2,23 +2,29 @@
   text-align: center;
 }
 
+#skills img {
+    transition: transform 0.5s;
+    width: 5rem;
+    border: none;
+}
+
 .languages i, .frameworks i {
-  transition: font-size 0.5s;
+  transition: transform 0.5s;
   font-size: 4rem;
   display: flex;
   margin: 1rem;
   flex-direction: column;
 }
 
-.languages i:hover, .frameworks i:hover {
-  transition: font-size 0.5s;
-  font-size: 5rem;
+.languages i:hover, .frameworks i:hover, #skills img:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
 .languages i p, .frameworks i p{
   color: black;
   position: relative;
-  bottom: 6rem;
+  bottom: 5rem;
   font-size: .75rem;
   height:1rem;
 }
@@ -29,8 +35,4 @@
 
 #skills .section-header {
   margin-bottom: 0.75rem;
-}
-
-.technologies {
-  padding-left: 1rem;
 }
