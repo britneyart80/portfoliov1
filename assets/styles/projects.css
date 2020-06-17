@@ -1,17 +1,28 @@
 #projects {
   text-align: center;
+  border: none;
+}
+
+#projects .section-subheader {
+  margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .projects {
   background-color: #FFFFFF;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
 }
 
 .project {
   display: flex;
-  justify-content: space-around;
-  margin: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
   margin-bottom: 3rem;
   border-radius: 20px;
 }
@@ -25,12 +36,92 @@
 }
 
 .project img {
-  max-width: 60vw;
+  margin: 0;
   max-height: none;
+  width: 300px;
+  height: 400px;
+}
+
+.modal-trigger {
+  position: relative;
+  width: 300px;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border:none;
+}
+
+.modal-trigger:hover img {
+  transition: 0.5s ease;
+  opacity: 0.2;
+}
+
+.project-title {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  background-color: #634346;
+  transition: .2s ease;
+}
+
+.modal-trigger:hover .project-title {
+  opacity: 1;
+}
+
+/* buttons */
+
+.standard-btn {
+  width: 150px;
+  height: 50px;
+  margin: 2rem;
+}
+
+.btn-primary {
+  position: relative;
+  color: #B87D83;
+  background-color: #FFFFFF;
+  border: 2px solid #ddb8ba;
+}
+
+.btn-primary:hover {
+  border: none;
+  background-color: #ddb8ba;
+  color: white;
+  border: 2px solid #ddb8ba;
 }
 
 /* modal */
 
 .technologies {
   padding-left: 1rem;
+  list-style: none;
+}
+
+.modal-button {
+  display: inline-block;
+}
+
+.modal-button a {
+  color: #B87D83;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.modal-button a:hover {
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+
 }

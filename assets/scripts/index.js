@@ -4,7 +4,7 @@ $(() => {
     const url = e.target.href
     const hash = url.substring(url.indexOf('#') + 1)
     $('html, body').animate({
-      scrollTop: $('#' + hash).offset().top - 150
+      scrollTop: $('#' + hash).offset().top - 120
     }, 1300)
     return false
   })

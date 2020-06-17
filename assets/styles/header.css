@@ -5,9 +5,9 @@ nav {
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
-  height: 60px;
+  height: 65px;
   background-color: #FFFFFF;
   border-bottom: 1px solid;
   padding: 10px;
@@ -42,9 +42,9 @@ header {
   margin: 0;
   height: 700px;
   color: #FFFFFF;
-  background: linear-gradient(132deg, #f0a7c7, #89b4e6);
+  background: linear-gradient(132deg, #CDA4A8, #89b4e6);
   background-size: 400% 400%;
-  animation: BackgroundGradient 5s ease infinite;
+  animation: BackgroundGradient 10s ease infinite;
 }
 
 @keyframes BackgroundGradient {

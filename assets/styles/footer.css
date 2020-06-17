@@ -2,27 +2,16 @@
 /* // contact information */
 
 #contact {
-  margin-top: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 5vw;
   border: none;
-  background: #B87D83;
 }
+
 #contact h1 {
   text-align: left;
   margin-left: 8vw;
-  color: white;
-  text-shadow: 3px 3px black;
-}
-
-.credits {
-  padding: 1rem 0;
-  font-size: .7rem;
-  text-align: right;
-  margin-right: 8vw;
-  color: rgba(241, 231, 254, 1);
-}
-
-.credits a {
-  color: rgba(241, 231, 254, 1);
+  color: black;
 }
 
 .info {
@@ -32,111 +21,30 @@
   margin-left: 2vw;
 }
 
-.info img {
-  border: none;
-}
-
-.modal-button a {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-
 /* // column one */
-.contact-info {
-  width: 40vw;
-}
-
-.projects {
-  display: inline-block;
-}
-
-.project {
+.links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 3px;
-}
-
-.project img {
-  max-width: 60vw;
-  max-height: none;
-}
-
-.technologies {
-  padding-left: 1rem;
-}
-
-#talkbubble {
-  color: black;
-  height: 300px;
-  background: rgba(241, 231, 254, 1);
-  position: relative;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  box-shadow: 5px 5px black;
-}
-#talkbubble img {
-  width: 2rem;
-  border: none;
-  padd
-}
-#talkbubble:before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 26px;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid rgba(241, 231, 254, 1);
-  border-bottom: 13px solid transparent;
-}
-.talkbubble-info {
-  padding: 1rem;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.talkbubble-info a:hover {
-  text-decoration: underline;
-}
-
-.art-portfolio {
-  padding: 2rem;
-}
-.art-portfolio h2 {
-  text-align: left;
-  color: rgba(241, 231, 254, 1);
-}
-.art-portfolio img {
-  margin: 0;
-}
-.art-portfolio a {
-    text-decoration: none;
-    color: rgba(241, 231, 254, 1);
-  }
-
-  /* // column two */
-.other-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding: .5rem;
-  height: 500px;
+  height: 50px;
   width: 40vw;
 }
-.other-links a, .github {
-  color: rgba(241, 231, 254, 1);
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.links img {
+  border: none;
+  margin: 0 1rem;
+  max-height: 40px;
 }
-.other-links img {
-  max-height: 80px;
+
+.link:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.credits {
+  font-size: .7rem;
+  text-align: right;
+  margin-right: 8vw;
+  color: black;
 }

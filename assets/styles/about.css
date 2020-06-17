@@ -4,7 +4,6 @@
   margin-top: 1rem;
   padding: 50px 15vw;
   background-color: #FFFFFF;
-  border-bottom: 0.5px solid #B0B0B0;
 }
 
 .about-info {
@@ -19,6 +18,22 @@
   max-width: 100%;
   max-height: 400px;
   margin: 1rem;
-  border-radius: 50%;
+  border-radius: 45%;
   float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about {
+    flex-direction: column;
+  }
+  .profile-pic, .about-info {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+  }
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

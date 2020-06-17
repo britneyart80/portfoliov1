@@ -6,6 +6,7 @@
     transition: transform 0.5s;
     width: 5rem;
     border: none;
+    margin: 0;
 }
 
 .languages i, .frameworks i {
@@ -26,6 +27,7 @@
   position: relative;
   bottom: 5rem;
   font-size: .75rem;
+  font-style: normal;
   height:1rem;
 }
 
